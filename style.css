@@ -1,0 +1,647 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-top: 0;
+}
+
+.services-service,
+.skills-experience,
+.project-projects,
+.testimonials-testimonial,
+.footer-contact {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-45deg);
+  margin-bottom: 3%;
+  top: -3%;
+  left: -3%;
+}
+
+.navbar {
+  margin-top: 10px;
+  padding: 0 4%;
+}
+
+.navbar ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar img {
+  width: 4%;
+  margin-right: 10px;
+}
+
+.navbar form {
+  width: 15%;
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.row {
+  padding: 3% 5%;
+}
+
+.row h1 {
+  margin-top: 10%;
+  line-height: 1.5;
+}
+
+.header-hello {
+  margin: 0;
+  position: absolute;
+  color: gray;
+  top: 160px;
+  left: 60px;
+  transform: rotate(-45deg);
+}
+
+.header-para {
+  color: gray;
+  width: 70%;
+}
+
+.header-img {
+  position: relative;
+  left: 3%;
+}
+
+.header-btn {
+  margin: 5% 3% 5% 0;
+}
+
+@keyframes move {
+  0% {
+    top: 10px;
+    right: 30px;
+  }
+  25% {
+    top: 10px;
+    right: 20px;
+  }
+  50% {
+    top: 10px;
+    right: 10px;
+  }
+  75% {
+    top: 10px;
+    right: 20px;
+  }
+  100% {
+    top: 10px;
+    right: 30px;
+  }
+}
+
+.header-img p {
+  position: absolute;
+  font-weight: 700;
+  width: 30%;
+  top: 10px;
+  right: 30px;
+  color: black;
+}
+
+.header-img p:hover {
+  animation: move 1000ms ease-in-out forwards;
+}
+
+.social {
+  display: flex;
+  color: gray;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social p {
+  margin-bottom: 0;
+}
+
+.social-btn {
+  background-color: gainsboro;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* services */
+
+#services {
+  background-color: #ffbd59;
+}
+
+.services-div1 {
+  position: relative;
+}
+
+.services-div1 h1 {
+  margin-top: 0;
+}
+
+.services-para {
+  width: 70%;
+}
+
+.services-img {
+  width: 40%;
+  position: absolute;
+  bottom: 1px;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.services-img:hover {
+  animation: shake 500ms ease-in-out forwards;
+}
+
+hr {
+  height: 3px;
+  border: none;
+  background-color: #000;
+}
+
+.services-offered p {
+  font-weight: 500;
+  float: left;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+
+.services-offered h2 {
+  font-weight: bold;
+}
+
+.services-btn {
+  position: relative;
+  border-radius: 100%;
+  margin-left: 90%;
+}
+
+/* skills section */
+
+.skills-div {
+  margin-bottom: 35%;
+  position: relative;
+}
+
+.skills-heading {
+  margin: 3% 0% 5%;
+  font-weight: bold;
+}
+
+.skill-para {
+  width: 75%;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 5rem;
+  row-gap: 2rem;
+  text-align: center;
+  grid-template-columns: auto auto auto;
+}
+
+.skills-btn {
+  margin-bottom: 5%;
+  border-radius: 100%;
+}
+
+.experience {
+  margin-top: 83px;
+}
+
+.experience h3 {
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+
+.experience h5 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  float: left;
+  padding-right: 3%;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill-row {
+  position: relative;
+}
+
+.skill2,
+.skill3,
+.skill4 {
+  gap: 1.1rem;
+}
+
+.skills-logo {
+  position: absolute;
+  margin-top: 5%;
+}
+
+.skill-circle {
+  position: absolute;
+  width: 25%;
+  right: 10%;
+  bottom: -12%;
+  z-index: -1;
+}
+
+.service-profile {
+  position: absolute;
+  width: 20%;
+  right: 13%;
+  bottom: 0%;
+}
+
+/* project section  */
+
+#project {
+  background-color: #ffbd59;
+}
+
+#project h1 {
+  width: 60%;
+}
+
+.demo-page {
+  width: 70%;
+}
+
+.project {
+  position: relative;
+}
+.project h3 {
+  width: 70%;
+}
+
+.project-btn {
+  border-radius: 100%;
+  float: right;
+}
+
+.project1 {
+  position: relative;
+}
+
+.project2 {
+  margin-top: 8%;
+}
+
+.project3 {
+  margin-top: 0;
+}
+
+.project-logo {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.project-logo:hover {
+  animation: shake 500ms ease-in-out forwards;
+}
+
+/* testimonial-section */
+
+#testimonial {
+  padding: 3% 5%;
+  margin-top: 3%;
+}
+
+.testimonial-intro {
+  position: relative;
+  display: flex;
+}
+
+.testimonial-intro h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.testimonial-para {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.testimonial-img1 {
+  width: 60%;
+}
+
+.testimonial-img2 {
+  width: 50%;
+  margin-left: 20rem;
+}
+
+.client-msg {
+  width: 150%;
+}
+
+.client-note {
+  line-height: 1.5;
+  font-size: medium;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.client-name {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* footer  */
+
+#footer {
+  background-color: #ffbd59;
+}
+
+.footer-main {
+  position: relative;
+}
+
+#footer h1 {
+  margin: 0 auto 8% auto;
+}
+
+.address-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address1 {
+  display: flex;
+  gap: 1rem;
+  margin-right: 5rem;
+}
+
+.address1-1 h5 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.footer-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bar {
+  display: flex;
+  gap: 25%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.mid-p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  .services-service,
+  .skills-experience,
+  .project-projects,
+  .footer-contact,
+  .testimonials-testimonial {
+    position: absolute;
+    display: inline-block;
+    transform: rotate(-45deg);
+  }
+
+  .services-service,
+  .skills-experience,
+  .testimonials-testimonial {
+    margin-bottom: 3%;
+    top: 0;
+    left: 10%;
+  }
+
+  .services-div1,
+  .skill-row,
+  .project1,
+  .footer-main {
+    margin-top: 5%;
+  }
+
+  .header-hello {
+    position: relative;
+    display: inline-block;
+    transform: rotate(-45deg);
+    left: 10%;
+    top: 10%;
+  }
+
+  .project-projects {
+    margin-bottom: 3%;
+    top: 0;
+    left: 16%;
+  }
+
+  .footer-contact {
+    margin-bottom: 3%;
+    top: 0;
+    left: 0;
+  }
+
+  /* header  */
+
+  .navbar img {
+    width: 20%;
+  }
+  
+  .row h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .header-para {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .header-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-img p {
+    width: 50%;
+  }
+
+  .header-img img {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  /* services  */
+
+  .services-para {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .services-img {
+    position: relative;
+    width: 60%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .services-img:hover {
+    animation: shake 500ms ease-in-out forwards;
+  }
+
+  .services-div2 {
+    margin-bottom: 10%;
+  }
+
+  /* skills  */
+
+  .skill-para {
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+
+  .skills-logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container {
+    column-gap: 5rem;
+    row-gap: 2rem;
+    text-align: center;
+    grid-template-columns: auto auto;
+  }
+
+  .experience {
+    margin-top: 100%;
+    margin-bottom: 30%;
+  }
+
+  .skill-circle {
+    position: absolute;
+    width: 60%;
+    bottom: -8%;
+    right: 20%;
+  }
+
+  .service-profile {
+    position: absolute;
+    width: 40%;
+    bottom: 0%;
+    right: 30%;
+  }
+
+  /* projects  */
+
+  #project h1 {
+    margin: 15% auto;
+  }
+
+  /* testimonial  */
+
+  .testimonial-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 0 5%;
+  }
+
+  .testimonial-intro h1 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .testimonial-para {
+    width: 100%;
+  }
+
+  .testimonials {
+    margin: 0;
+  }
+
+  .client-msg {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-img1,
+  .testimonial-img2 {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* footer  */
+
+  .address1 {
+    margin: 0;
+  }
+
+  .address1-1 {
+    width: 100%;
+  }
+
+  .footer-icon img {
+    width: 80%;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+  }
+}
